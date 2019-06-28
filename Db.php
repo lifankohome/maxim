@@ -24,7 +24,7 @@ class Db
     public static function connect()
     {
         try {
-            $PDO = new \PDO("mysql:host=127.0.0.1;dbname=" . self::$db, "root", "lifanko");
+            $PDO = new \PDO("mysql:host=127.0.0.1;dbname=" . self::$db, "root", "lifanko521");
         } catch (\PDOException $e) {
             die("<div style='color: red;text-align: center;margin-top: 10%'><h1>Unable to connect to database</h1><h3>Please contact lifankohome@163.com</h3></div>");
         }

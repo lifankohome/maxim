@@ -16,7 +16,7 @@ $fh = fopen($filename, 'r');
 
 $time = time();
 while (!feof($fh)) {
-    $line = fgets($fh);
+    $line = mb_substr(fgets($fh), 0, -2);
 
     if (strlen($line) > 5) {
         $sql = "INSERT INTO maxim (content,time) VALUES (:content, :time)";
